@@ -1,0 +1,1641 @@
+@font-face {
+    font-family: "BigMisterC";
+    src: url("../fonts/BigMisterC.ttf");
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner-container{
+    max-width: 1806px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .inner-container{
+        max-width: 1770px;
+        width: 92%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .inner-container{
+        width: 97%;
+    }
+}
+@media screen and (min-width: 1050px) and (max-width: 1199px) {
+    .inner-container{
+        width: 86%;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1049px) {
+    .inner-container{
+        width: 90%;
+    }
+}
+@media (max-width: 979px) {
+    .inner-container{
+        width: 100%;
+    }
+    .catch-up-content-container {
+        display: none;
+    }
+}
+
+
+.header{
+    width: 100%;
+    background: url(../img/header-background.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .header{
+        height: 620px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .header{
+        height: 520px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .header{
+        height: 400px;
+    }
+}
+
+
+.header-message-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px 0 450px 280px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .header-message-part{
+        margin: 62px 0 384px 289px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .header-message-part{
+        margin: 62px 0 384px 289px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .header-message-part{
+        margin: 18px 0 0 178px;
+    }
+}
+
+.logo{
+    font-family: BigMisterC;
+    font-size: 53px;
+    color: white;
+    margin: 20px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .logo{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .logo{
+        font-size: 21px;
+    }
+}
+
+.header-active-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    width: 750px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .nav-container{
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .nav-container{
+        width: 395px;
+    }
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-left: -20px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .nav{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .nav{
+        font-size: 13px;
+    }
+}
+
+.social-nav{
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.65;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .social-nav{
+        width: 214px;
+    }
+}
+
+.image {
+    width: 24px;
+    height: 24px;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image{
+        width: 20px;
+        height: 20px;
+        background-size: 100px;
+    }
+}
+
+.image-twitter{
+    background-position: -34px 0;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-twitter{
+        background-position: -27px 0;
+    }
+}
+
+.image-telegram{
+    background-position: -68px 0;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-telegram{
+        background-position: -54px 0;
+    }
+}
+
+.image-viber{
+    background-position: -102px -0;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-viber{
+        background-position: -80px -0;
+    }
+}
+
+.image-instagram{
+    background-position: 0 -34px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-instagram{
+        background-position: 0 -27px;
+    }
+}
+
+.image-vk{
+    background-position: -34px -34px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-vk{
+        background-position: -27px -27px;
+    }
+}
+
+.image-rss{
+    background-position: -68px -34px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-rss{
+        background-position: -54px -27px;
+    }
+}
+
+.image-search{
+    background-position: -102px -34px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-search{
+        background-position: -80px -27px;
+    }
+}
+
+.language{
+    margin-right: 20px;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .language{
+        font-size: 14px;
+    }
+}
+
+.main-header-message{
+    font-family: "Century Gothic";
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .main-header-message{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .main-header-message{
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .main-header-message{
+        font-size: 28px;
+    }
+}
+
+.caption-to-main-message{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .caption-to-main-message{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .caption-to-main-message{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .caption-to-main-message{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+.first-points-set{
+    width: 100%;
+    height: 100%;
+}
+
+.first-points-set-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-set-element{
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    bottom: 274px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .first-set-element{
+        width: 70%;
+        height: 70%;
+        bottom: 205px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .first-set-element{
+        width: 70%;
+        height: 70%;
+        bottom: 190px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .first-set-element{
+        width: 70%;
+        height: 50%;
+        bottom: 190px;
+    }
+}
+
+.first-element-image{
+    background: url(../img/first-element-image.png) 100% 100% no-repeat;
+    width: 740px;
+    height: 450px;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .first-element-image{
+        width: 70%;
+        height: 315px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .first-element-image{
+        width: 70%;
+        height: 290px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .first-element-image{
+        width: 61%;
+        height: 211px;
+    }
+}
+
+
+.message-container{
+    flex-direction: column;
+    display: flex;
+    margin: 80px 120px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .message-container{
+        margin: 56px 84px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .message-container{
+        margin: 50px 78px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .message-container{
+        margin: 27px 29px;
+    }
+}
+
+.main-first-element-message{
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .main-first-element-message{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .main-first-element-message{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .main-first-element-message{
+        font-size: 18px;
+    }
+}
+
+.first-element-description{
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .first-element-description{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .first-element-description{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .first-element-description{
+        width: 70%;
+    }
+}
+
+.first-part-description{
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .first-part-description{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .first-part-description{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .first-part-description{
+        width: 70%;
+    }
+}
+
+.header-description{
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .header-description{
+        font-size: 18px;
+    }
+}
+
+.data-description{
+    font-family: "Century Gothic";
+    font-size: 14px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .data-description{
+        font-size: 10px;
+    }
+}
+
+.description-text{
+    margin-top: 20px;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    width: 620px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .description-text{
+        width: 70%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .description-text{
+        width: 70%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .description-text{
+        width: 70%;
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+
+.counters-container{
+    display: flex;
+    justify-content: space-around;
+    width: 620px;
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .counters-container{
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .counters-container{
+        width: 70%;
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .counters-container{
+        width: 70%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+}
+
+.counter-point-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.price{
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price{
+        font-size: 12px;
+    }
+}
+
+.price-text{
+    font-family: "Century Gothic";
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price-text{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price-text{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+.price-caption{
+    font-family: "Century Gothic";
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price-caption{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price-caption{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price-caption{
+        font-size: 6px;
+    }
+}
+
+/*////////////////////////////*/
+
+.poster {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 547px;
+    background: url("../img/poster-image.png") no-repeat 100% 100%;
+    background-size: cover;
+    margin-top: 57px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .poster{
+        height: 380px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .poster{
+        height: 270px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .poster{
+        height: 227px;
+        margin-top: 35px;
+    }
+}
+
+.poster-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.poster-content {
+    font-family: "Century Gothic";
+    margin-left: 150px;
+    margin-top: 132px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .poster-content{
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .poster-content{
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .poster-content{
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+}
+
+
+.poster-header {
+    font-size: 60px;
+    width: 630px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .poster-header{
+        font-size: 50px;
+        width: 520px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .poster-header{
+        font-size: 35px;
+        width: 355px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .poster-header{
+        font-size: 35px;
+        width: 355px;
+    }
+}
+
+.poster-info {
+    font-size: 18px;
+    width: 800px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .poster-info{
+        font-size: 16px;
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .poster-info{
+        font-size: 14px;
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .poster-info{
+        font-size: 14px;
+        width: 550px;
+    }
+}
+
+.section-content {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.small-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.small-card {
+    height: 521px;
+    width: 348px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .small-card{
+        height: 442px;
+        width: 295px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .small-card{
+        height: 364px;
+        width: 242px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .small-card{
+        height: 260px;
+        width: 174px;
+    }
+}
+
+.small-card-background {
+    background: url("../img/small-card-img.png") no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.cards-and-sector-links-container {
+    position: relative;
+    bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1393px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .cards-and-sector-links-container{
+        bottom: 100px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .cards-and-sector-links-container{
+        bottom: 45px;
+        margin-left: 30px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .cards-and-sector-links-container{
+        bottom: 45px;
+        margin-left: 30px;
+        width: 75%;
+
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+/*@media screen and (min-width: 1550px) and (max-width: 1780px) {*/
+    /*.cards-container{*/
+        /*width: 92%;*/
+        /*!*margin-left: 102px;*!*/
+    /*}*/
+/*}*/
+/*@media screen and (min-width: 1200px) and (max-width: 1549px) {*/
+    /*.cards-container{*/
+        /*width: 96%;*/
+        /*!*margin-left: 27px;*!*/
+    /*}*/
+/*}*/
+/*@media  (min-width: 980px) and (max-width: 1199px) {*/
+    /*.cards-container{*/
+        /*width: 94%;*/
+        /*!*margin-left: 14px;*!*/
+    /*}*/
+/*}*/
+/*///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////*/
+@media  (min-width: 700px) and (max-width: 979px) {
+    .cards-container{
+        width: 50%;
+        margin-left: 27px;
+        flex-direction: column;
+    }
+}
+/*///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////*/
+
+.card {
+    height: 679px;
+    width: 426px;
+    background: rgb(244,244,244);
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .card{
+        height: 554px;
+        width: 362px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .card{
+        height: 431px;
+        width: 298px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .card{
+        height: 340px;
+        width: 208px;
+    }
+}
+
+
+.card .text-info {
+    width: 160px;
+}
+.card-image {
+    position: relative;
+    height: 341px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .card-image{
+        height: 298px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .card-image{
+        height: 238px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .card-image{
+        height: 170px;
+    }
+}
+
+.first-image {
+    background: url("../img/news-image-1.png") no-repeat 100% 100%;
+    background-size: cover;
+}
+.second-image {
+    background: url("../img/news-image-2.png") no-repeat 100% 100%;
+    background-size: cover;
+}
+.third-image {
+    background: url("../img/news-image-3.png") no-repeat 100% 100%;
+    background-size: cover;
+}
+.image-text {
+    position: absolute;
+    top: 30%;
+    left: 40px;
+}
+.center-card-text {
+    top: 20%;
+    left: 50px;
+}
+.center-card-text .text-info{
+    width: auto;
+}
+.center-card-text .text-header {
+    text-align: center;
+}
+
+.sector-links-container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .sector-links-container{
+        /*width: 86%;*/
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .sector-links-container{
+        /*width: 90%;*/
+        /*width: 96%;*/
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .sector-links-container{
+        /*width: 92%;*/
+        /*width: 94%;*/
+    }
+}
+
+
+.link-container {
+    margin-top: 20px;
+    width: 426px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .link-container{
+        /*width: 300px;*/
+        width: 362px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .link-container{
+        /*width: 285px;*/
+        width: 298px;
+
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .link-container{
+        /*width: 250px;*/
+        width: 208px;
+        /*padding-right: 40px;*/
+        /*box-sizing: content-box;*/
+    }
+}
+
+
+.text-header {
+    font-family: "Century Gothic";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .text-header{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .text-header{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .text-header{
+        font-size: 15px;
+    }
+}
+
+.text-info {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .text-info{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .text-info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .text-info{
+        font-size: 8px;
+    }
+}
+
+.news-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.news-item-content {
+    width: 330px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-item-content,
+    .news-list-item{
+        width: 280px;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-item-content,
+    .news-list-item{
+        width: 231px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-item-content,
+    .news-list-item{
+        width: 175px;
+        margin-top: 10px;
+    }
+}
+
+.news-item-info {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-item-info{
+        width: 270px;
+        margin-top: 15px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-item-info{
+        width: 231px;
+        margin-top: 5px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-item-info{
+        width: 196px;
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+
+.news-item-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+.news-item-header {
+    font-family: "Century Gothic";
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-item-header{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-item-header{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-item-header{
+        font-size: 12px;
+    }
+}
+
+.news-item-date {
+    font-family: "Century Gothic";
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-item-date{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-item-date{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-item-date{
+        font-size: 6px;
+    }
+}
+
+.news-item-text {
+    font-family: "Century Gothic";
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-item-text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-item-text{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-item-text{
+        font-size: 11px;
+        margin-top: 0;
+    }
+}
+
+.counter-point-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+
+
+
+
+
+
+
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 275px;
+    background: rgb(28,187,180);
+}
+.row-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Century Gothic";
+}
+.row-content-header {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .row-content-header{
+        font-size: 50px;
+        margin-bottom: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .row-content-header{
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .row-content-header{
+        font-size: 35px;
+    }
+}
+
+.row-content-info {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .row-content-info{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .row-content-info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .row-content-info{
+        font-size: 14px;
+        width: 81%;
+    }
+}
+
+.news-list-section {
+    width: 100%;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid rgb(244,244,244);
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-list-section{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-list-section{
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-list-section{
+        height: 180px;
+    }
+}
+
+
+.news-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 51px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.communication-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.communication-info, .copyright-years {
+    margin-right: 15px;
+}
+
+.communication-block {
+    margin-right: 100px;
+}
+
+
+
+
+/*правки*/
+.make-static{
+    position: static;
+}
+
+.catch-up-content-container{
+    margin-top: -165px;
+    align-items: start;
+}
+
+.text-small-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    top: 230px;
+    left: 45px;
+    width: 265px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .text-small-card{
+        width: 70%;
+        top: 161px;
+        left: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .text-small-card{
+        width: 70%;
+        top: 161px;
+        left: 32px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .text-small-card{
+        width: 50%;
+        top: 70px;
+        left: 25px;
+    }
+}
+
+.change-position{
+    position: absolute;
+}
+
+.top-set{
+    position: relative;
+    top: 513px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .top-set{
+        top: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .top-set{
+        top: 359px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .top-set{
+        top: 262px;
+    }
+}
+
+.last-set-elements{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .last-set-elements{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .last-set-elements{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .last-set-elements{
+        margin-top: 30px;
+    }
+}
+
+.left-bottom-part{
+    width: 47%;
+    height: 363px;
+    background: url(../img/poster.png) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .left-bottom-part{
+        height: 321px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .left-bottom-part{
+        height: 254px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .left-bottom-part{
+        height: 180px;
+    }
+}
+
+.news-set{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+    .news-set{
+        width: 49%;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .news-set{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1101px) and (max-width: 1199px) {
+    .news-set{
+        width: 48%;
+    }
+}
+@media screen and (min-width: 1020px) and (max-width: 1100px) {
+    .news-set{
+        width: 49%;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1019px) {
+    .news-set{
+        width: 50%;
+    }
+}
+
+.image-text-bottom-part{
+    width: 347px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-text-bottom-part{
+        width: 170px;
+        top: 48px;
+        left: 30px;
+    }
+}
+
+h1{
+    margin-bottom: 0.5em;
+}
+
+.news-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-last-set{
+    width: 425px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-last-set{
+        width: 362px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-last-set{
+        width: 298px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-last-set{
+        width: 208px;
+    }
+}
+
