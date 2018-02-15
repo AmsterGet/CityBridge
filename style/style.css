@@ -1673,30 +1673,6 @@ a {
     }
 }
 
-.change-position{
-    position: absolute;
-}
-
-.top-set{
-    position: relative;
-    top: 513px;
-}
-@media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .top-set{
-        top: 450px;
-    }
-}
-@media screen and (min-width: 1200px) and (max-width: 1549px) {
-    .top-set{
-        top: 359px;
-    }
-}
-@media screen and (min-width: 980px) and (max-width: 1199px) {
-    .top-set{
-        top: 262px;
-    }
-}
-
 .last-set-elements{
     display: -webkit-box;
     display: -ms-flexbox;
