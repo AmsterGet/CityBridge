@@ -1119,8 +1119,11 @@ a {
     flex-direction: column;
 }
 
-.counter-point-container:first-of-type{
+.counter-point-first-container {
     margin-top: 30px;
+}
+.card-point-counter {
+    margin-top: 60px;
 }
 
 .price-caption{
@@ -1156,7 +1159,7 @@ a {
     justify-content: center;
 }
 
-.button{
+.button, .card-button{
     margin-top: 67px;
     width: 430px;
     height: 85px;
@@ -1167,12 +1170,22 @@ a {
     align-items: center;
     font-size: 30px;
     font-family: "Century Gothic";
+    cursor: pointer;
+}
+.card-button {
+    width: 100%;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
     .button{
         margin-top: 36px;
         width: 344px;
+        height: 68px;
+        font-size: 28px;
+    }
+    .card-button {
+        margin-top: 26px;
         height: 68px;
         font-size: 28px;
     }
@@ -1184,6 +1197,10 @@ a {
         height: 60px;
         font-size: 24px;
     }
+    .card-button {
+        height: 60px;
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1199px) {
@@ -1192,15 +1209,13 @@ a {
         width: 215px;
         height: 42px;
         font-size: 20px;
-
+    }
+    .card-button {
+        margin-top: 20px;
+        height: 42px;
+        font-size: 20px;
     }
 }
-/*.description-container {*/
-    /*!*display: flex;*!*/
-    /*!*flex-direction: column;*!*/
-    /*!*justify-content: center;*!*/
-    /*!*align-items: flex-start;*!*/
-/*}*/
 
 .title-description{
     font-size: 30px;
@@ -1250,6 +1265,87 @@ a {
 @media screen and (max-width: 1199px) {/*(min-width: 980px) and */
     .description-paragraph{
         font-size: 12px;
-
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-slider {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cards-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(227, 227, 227);
+}
+@media screen and (max-width: 1620px) {
+    .card {
+        height: 570px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .card {
+        height: 505px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .card {
+        height: 460px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .card {
+        height: 390px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .card {
+        height: 350px;
+    }
+}
+
+.slider-item {
+    margin: 0 25px;
+}
+
+.transparent {
+    opacity: 0.35;
 }
