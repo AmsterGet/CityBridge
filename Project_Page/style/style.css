@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "ShlapakScript";
-    src: url("../fonts/ShlapakScript.otf");
+    font-family: "SegoeScript";
+    src: url("../fonts/SegoeScript.otf");
 }
 
 a {
@@ -78,7 +78,8 @@ a {
 
 
 .header-message-part{
-    background: url(../img/background-with-wolf.png) no-repeat 100% 100%;
+    color: white;
+    background: url(../img/background-with-girl.png) no-repeat 100% 100%;
     background-size: cover;
     padding: 200px 0;
     display: flex;
@@ -118,21 +119,21 @@ a {
 }
 
 .logo{
-    font-family: ShlapakScript;
-    font-size: 53px;
-    color: #4cbfbb;
+    font-family: SegoeScript;
+    font-size: 40px;
+    color: #010101;
     margin: 50px 20px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1549px) {
     .logo{
-        font-size: 45px;
+        font-size: 31px;
     }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1199px) {
     .logo{
-        font-size: 21px;
+        font-size: 20px;
     }
 }
 
@@ -372,7 +373,7 @@ a {
 
 .content{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 65px;
     margin-bottom: 70px;
 }
 
@@ -396,7 +397,7 @@ a {
 }
 
 .first-side-bar{
-    width: 19.5%;
+    width: 19%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -407,7 +408,7 @@ a {
 }
 
 .main-part-first-content{
-    width: 44%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -417,36 +418,84 @@ a {
     flex-direction: column;
 }
 
-.image-first-content{
+.third-part{
     width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.small-card {
-    height: 463px;
+.caption-first-card{
+    width: 348px;
+    height: 200px;
+    background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .caption-first-card{
+        width: 280px;
+        height: 160px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .caption-first-card{
+        width: 243px;
+        height: 140px;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .caption-first-card{
+        width: 174px;
+        height: 100px;
+    }
+}
+
+.news-card-caption{
+    width: 270px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .news-card-caption{
+        width: 216px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .news-card-caption{
+        width: 189px;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .news-card-caption{
+        width: 135px;
+    }
+}
+
+.first-card {
+    height: 626px;
     width: 348px;
     margin-top: 20px;
 }
 
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
-    .small-card{
-        height: 394px;
+    .first-card{
+        height: 482px;
         width: 269px;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1549px) {
-    .small-card{
-        height: 324px;
+    .first-card{
+        height: 438px;
         width: 244px;
     }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-    .small-card{
-        height: 231px;
+    .first-card{
+        height: 313px;
         width: 174px;
     }
 }
 
-.small-card-background {
+.first-card-background {
     background: url("../img/small-card-img.png") no-repeat 100% 100%;
     background-size: cover;
 }
@@ -461,7 +510,7 @@ a {
     flex-direction: column;
     color: white;
     position: relative;
-    top: 230px;
+    top: 350px;
     left: 45px;
     width: 265px;
 }
@@ -469,21 +518,21 @@ a {
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
     .text-small-card{
         width: 70%;
-        top: 161px;
+        top: 265px;
         left: 32px;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1549px) {
     .text-small-card{
         width: 70%;
-        top: 161px;
+        top: 242px;
         left: 32px;
     }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
     .text-small-card{
-        width: 50%;
-        top: 70px;
+        width: 60%;
+        top: 172px;
         left: 25px;
     }
 }
@@ -672,22 +721,22 @@ a {
 .title-main-part{
     font-family: "Century Gothic";
     color: black;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: bold;
     width: 600px;
-    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
     .title-main-part{
-        font-size: 40px;
+        font-size: 25px;
         width: 510px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1549px) {
     .title-main-part{
-        font-size: 32px;
+        font-size: 20px;
         width: 410px;
     }
 }
@@ -699,13 +748,29 @@ a {
     }
 }
 
-.last-paragraph{
-    margin-top: 80px;
+.image-main-part{
+    background: url(../img/main-part-img.png) no-repeat 100% 100%;
+    background-size: cover;
+    height: 400px;
+    margin-top: 30px;
 }
 
-.image-first-content{
-    background: url(../img/small-card-img.png) no-repeat 100% 100%;
-    background-size: cover;
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .image-main-part{
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .image-main-part{
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .image-main-part{
+        height: 200px;
+    }
 }
 
 .second-part-content{
@@ -982,4 +1047,209 @@ a {
 
 .communication-block {
     margin-right: 100px;
+}
+
+
+.price-container {
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.price{
+    font-family: "Century Gothic";
+    font-size: 60px;
+    font-weight: bold;
+    color: #00c2f6;
+    margin-right: 30px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price{
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price{
+        font-size: 35px;
+    }
+}
+
+.price-text{
+    font-family: "Century Gothic";
+    font-size: 36px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price-text{
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price-text{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price-text{
+        font-size: 22px;
+        margin-left: 5px;
+    }
+}
+
+.counter-point-container{
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.counter-point-container:first-of-type{
+    margin-top: 30px;
+}
+
+.price-caption{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    width: 260px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .price-caption{
+        font-size: 16px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .price-caption{
+        font-size: 10px;
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .price-caption{
+        font-size: 6px;
+        width: 180px;
+    }
+}
+
+.news-third-part{
+    justify-content: center;
+}
+
+.button{
+    margin-top: 67px;
+    width: 430px;
+    height: 85px;
+    background-color: #00c2f6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Century Gothic";
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .button{
+        margin-top: 36px;
+        width: 344px;
+        height: 68px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .button{
+        width: 301px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .button{
+        margin-top: 20px;
+        width: 215px;
+        height: 42px;
+        font-size: 20px;
+
+    }
+}
+/*.description-container {*/
+    /*!*display: flex;*!*/
+    /*!*flex-direction: column;*!*/
+    /*!*justify-content: center;*!*/
+    /*!*align-items: flex-start;*!*/
+/*}*/
+
+.title-description{
+    font-size: 30px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1780px) {
+    .title-description{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1549px) {
+    .title-description{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .title-description{
+        font-size: 18px;
+
+    }
+}
+
+.description-paragraph{
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: "Century Gothic";
+    text-align: justify
+}
+
+@media screen and (max-width: 1780px) {/*(min-width: 1550px) and */
+    .description-paragraph{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1549px) {/* (min-width: 1200px) and */
+    .description-paragraph{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1199px) {/*(min-width: 980px) and */
+    .description-paragraph{
+        font-size: 12px;
+
+    }
 }
