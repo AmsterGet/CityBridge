@@ -33,6 +33,14 @@
 {
     outline: none;
 }
+.slider-item {
+    margin: 0 25px;
+    opacity: 0.35;
+    transition: opacity .4s linear;
+}
+.slider-item.slick-active {
+    opacity: 1;
+}
 .slider-item:focus
 {
     outline: none;

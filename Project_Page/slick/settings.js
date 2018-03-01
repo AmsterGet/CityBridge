@@ -2,7 +2,8 @@
    infinite: true,
    speed: 1200,
    slidesToShow: 3,
-   slidesToScroll: 1,
+   slidesToScroll: 3,
+   swipeToSlide: true,
    focusOnSelect: true,
    centerMode: true,
    centerPadding: '200px',
@@ -13,7 +14,7 @@
       settings: {
         centerPadding: '150px',
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         arrows: false
       }
     },
@@ -22,26 +23,9 @@
       settings: {
         centerPadding: '110px',
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         arrows: false
       }
     }
    ]
-  });
-
-  function checkActive() {
-      let arr = document.querySelectorAll('.slider-item');
-      arr.forEach(function (item) {
-          if (item.classList.contains('slick-active')) {
-              item.classList.remove('transparent');
-          } else {
-              item.classList.add('transparent');
-          }
-      });
-  }
-
-  checkActive();
-
-  $('.slider-item').click(function () {
-      checkActive();
   });

@@ -1301,13 +1301,6 @@ a {
     overflow: hidden;
 }
 
-.card-description-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
     height: 633px;
     display: flex;
@@ -1340,12 +1333,4 @@ a {
     .card {
         height: 350px;
     }
-}
-
-.slider-item {
-    margin: 0 25px;
-}
-
-.transparent {
-    opacity: 0.35;
 }
